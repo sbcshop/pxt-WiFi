@@ -48,8 +48,8 @@ namespace WiFi {
     //% blockId="wfb_connect" block="connect to WiFi"
     export function connectToWiFi(): void {
         serial.redirect(
-            SerialPin.P12,
             SerialPin.P8,
+            SerialPin.P12,
             BaudRate.BaudRate115200
         )
         basic.pause(100)

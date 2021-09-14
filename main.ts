@@ -135,7 +135,7 @@ namespace WiFi {
         writeToSerial("AT+CIPCLOSE", pauseBaseValue * 3)
     }
 
-    /* Blynk Block removed
+    /** Blynk Block removed
     
     
     /**

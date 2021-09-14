@@ -135,6 +135,9 @@ namespace WiFi {
         writeToSerial("AT+CIPCLOSE", pauseBaseValue * 3)
     }
 
+    /* Blynk Block removed
+    
+    
     /**
      * Write Blynk pin value.
      * @param value Value, eg: "510"
@@ -176,6 +179,8 @@ namespace WiFi {
         serial.onDataReceived(serial.delimiters(Delimiters.NewLine), () => { })
         return value
     }
+    
+    */ Removed Blynk block
 
     /**
      * Line separator. It's used when headers or body are multiline.

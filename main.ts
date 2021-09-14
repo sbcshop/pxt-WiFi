@@ -135,7 +135,7 @@ namespace WiFi {
         writeToSerial("AT+CIPCLOSE", pauseBaseValue * 3)
     }
 
-    /** Blynk Block removed
+    
     
     
     /**
@@ -146,6 +146,8 @@ namespace WiFi {
      */
     //% weight=95
     //% blockId="wfb_blynk_write" block="Blynk: write %value to %pin, token is %auth_token"
+    
+    /** Blynk Block removed
     export function writePinValue(value: string, pin: string, auth_token: string): void {
         executeHttpMethod(
             HttpMethod.GET,
@@ -154,6 +156,7 @@ namespace WiFi {
             "/" + auth_token + "/update/" + pin + "?value=" + value
         )
     }
+    */ // Close removal tag
 
     /**
      * Read Blynk pin value.
@@ -162,6 +165,9 @@ namespace WiFi {
      */
     //% weight=94
     //% blockId="wfb_blynk_read" block="Blynk: read %pin, token is %auth_token"
+    
+    /** Blynk Block removed
+    
     export function readPinValue(pin: string, auth_token: string): string {
         executeAtCommand("ATE0", 1000)
         let response: string
@@ -180,7 +186,7 @@ namespace WiFi {
         return value
     }
     
-    */ Removed Blynk block
+    */ // Removed Blynk block
 
     /**
      * Line separator. It's used when headers or body are multiline.
